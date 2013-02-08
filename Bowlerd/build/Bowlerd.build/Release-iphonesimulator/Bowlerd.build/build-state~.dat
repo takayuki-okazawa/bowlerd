@@ -1,256 +1,0 @@
-TBowlerd
-v7
-r0
-t323199323.491978
-cCheck dependencies
-cProcessInfoPlistFile "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Info.plist" Bowlerd-Info.plist
-cCompileXIB "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/MainWindow.xib"
-cCompileXIB "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/BowlerdViewController.xib"
-cProcessPCH /var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch.gch Bowlerd_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/main.o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdAppDelegate.o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdViewController.o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd" normal i386
-cGenerateDSYMFile "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app.dSYM" "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd"
-cTouch "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app"
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004CC128950000000000000110
-t1287727253
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC12246000000000029B310
-t1287725638
-s2732816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC1226D000000000029D5D0
-t1287725677
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC1225F0000000000001466
-t1287725663
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC1281F0000000000000AA1
-t1287727135
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC12883000000000074D7B0
-t1287727235
-s7657392
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/BowlerdViewController.xib
-c000000004CB82F620000000000008BE1
-t1287139170
-s35809
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Bowlerd_Prefix.pch
-c000000004CB73AF300000000000000B7
-t1287076595
-s183
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.h
-c000000004CB73AF300000000000001DC
-t1287076595
-s476
-i<UIKit/UIKit.h>
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.m
-c000000004CB75EB200000000000002EB
-t1287085746
-s747
-i"BowlerdAppDelegate.h"
-i"BowlerdViewController.h"
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.h
-c000000004CB75EB200000000000000EB
-t1287085746
-s235
-i<UIKit/UIKit.h>
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.m
-c000000004CB73AF300000000000005B6
-t1287076595
-s1462
-i"BowlerdViewController.h"
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/MainWindow.xib
-c000000004CB73AF3000000000000264C
-t1287076595
-s9804
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/Bowlerd.LinkFileList
-c000000004D9369D90000000000000226
-t1301506521
-s550
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdAppDelegate.o
-t1301506523
-s48160
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdViewController.o
-t1301506523
-s37504
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/main.o
-t1301506523
-s6388
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app
-t1301506523
-s238
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app.dSYM
-t1301506523
-s102
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd
-t1301506523
-s16380
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/BowlerdViewController.nib
-t1301506522
-s3397
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Info.plist
-t1301506521
-s591
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/MainWindow.nib
-t1301506522
-s1123
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/PkgInfo
-t1301506521
-s8
-
-N/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/main.m
-c000000004CB73AF30000000000000166
-t1287076595
-s358
-i<UIKit/UIKit.h>
-
-N/var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch.gch
-t1301506523
-s15113424
-
-NBowlerd-Info.plist
-c000000004CB73AF3000000000000038D
-t1287076595
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies323199321#323199321#0(0"0(0#1#0"8602978336#0"0#
-
-CCompileC build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdAppDelegate.o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s323199323.153776
-e323199323.278367
-r1
-xCompileC
-xbuild/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdAppDelegate.o
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@124"Compile /Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.m323199323#323199323#0(0"0(0#0#116"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.m8603364032#2570"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-generated-files.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-own-target-headers.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-all-target-headers.hmap" -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-project-headers.hmap" "-F/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/include" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources/i386" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch -c "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdAppDelegate.m" -o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdAppDelegate.o"0#
-
-CCompileC build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdViewController.o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s323199323.237793
-e323199323.339164
-r1
-xCompileC
-xbuild/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdViewController.o
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@127"Compile /Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.m323199323#323199323#0(0"0(0#0#119"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.m8601064544#2576"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-generated-files.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-own-target-headers.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-all-target-headers.hmap" -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-project-headers.hmap" "-F/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/include" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources/i386" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch -c "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Classes/BowlerdViewController.m" -o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/BowlerdViewController.o"0#
-
-CCompileC build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/main.o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s323199323.152782
-e323199323.237612
-r1
-xCompileC
-xbuild/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/main.o
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@102"Compile /Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/main.m323199323#323199323#0(0"0(0#0#94"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/main.m8598746784#2534"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-generated-files.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-own-target-headers.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-all-target-headers.hmap" -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-project-headers.hmap" "-F/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/include" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources/i386" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch -c "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/main.m" -o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/main.o"0#
-
-CCompileXIB "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/BowlerdViewController.xib"
-s323199321.768935
-e323199322.404488
-r1
-xCompileXIB
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/BowlerdViewController.xib
-lSLF07#2@36"CompileXIB BowlerdViewController.xib323199321#323199322#0(0"0(0#0#113"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/BowlerdViewController.xib8602996448#747"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/BowlerdViewController.nib" "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/BowlerdViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/MainWindow.xib"
-s323199321.768303
-e323199322.272906
-r1
-xCompileXIB
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib323199321#323199322#0(0"0(0#0#102"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/MainWindow.xib8603325504#725"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/MainWindow.nib" "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CGenerateDSYMFile "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app.dSYM" "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd"
-s323199323.468761
-e323199323.489371
-r1
-xGenerateDSYMFile
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app.dSYM
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd
-lSLF07#2@113"GenerateDSYMFile build/Release-iphonesimulator/Bowlerd.app.dSYM build/Release-iphonesimulator/Bowlerd.app/Bowlerd323199323#323199323#0(0"0(0#0#137"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd8601457408#540"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd" -o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app.dSYM"0#
-
-CLd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd" normal i386
-s323199323.339244
-e323199323.468684
-r1
-xLd
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd
-xnormal
-xi386
-lSLF07#2@142"Link /Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd323199323#323199323#0(0"0(0#0#0"8608759712#1163"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator" "-F/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator" -filelist "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Objects-normal/i386/Bowlerd.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Bowlerd"0#
-
-CProcessInfoPlistFile "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Info.plist" Bowlerd-Info.plist
-s323199321.718864
-e323199321.768226
-r1
-xProcessInfoPlistFile
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Info.plist
-xBowlerd-Info.plist
-lSLF07#2@26"Process Bowlerd-Info.plist323199321#323199321#0(0"0(0#0#106"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Bowlerd-Info.plist8590263008#636"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Bowlerd-Info.plist -genpkginfo "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app/Info.plist"0#
-
-CProcessPCH /var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch.gch Bowlerd_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s323199322.404587
-e323199323.152682
-r1
-xProcessPCH
-x/var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch.gch
-xBowlerd_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@29"Precompile Bowlerd_Prefix.pch323199322#323199323#0(0"0(0#0#106"/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Bowlerd_Prefix.pch8603423776#2373"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-generated-files.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-own-target-headers.hmap" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-all-target-headers.hmap" -iquote "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/Bowlerd-project-headers.hmap" "-F/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/include" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources/i386" "-I/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Bowlerd.build/Release-iphonesimulator/Bowlerd.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -c "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/Bowlerd_Prefix.pch" -o /var/folders/r2/r25K-j87G2yBoM4tRyNxH++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bowlerd_Prefix-gedvpbeiaavbnegzahvmjwrzlvxv/Bowlerd_Prefix.pch.gch0#
-
-CTouch "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app"
-s323199323.489438
-e323199323.491954
-r1
-xTouch
-x/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app
-lSLF07#2@135"Touch /Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app323199323#323199323#0(0"0(0#0#0"8600382912#382"    cd "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/user/my work/iPhoneアプリ/iPhoneアプリ_ボーラード/Bowlerd/build/Release-iphonesimulator/Bowlerd.app"0#
-
