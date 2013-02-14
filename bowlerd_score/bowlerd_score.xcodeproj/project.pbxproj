@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE153A9516C4D94E005017FF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE153A9416C4D94E005017FF /* Default.png */; };
-		CE153A9916C4DA25005017FF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE153A9816C4DA25005017FF /* Default@2x.png */; };
+		50CCB08116CCD384009082A5 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CCB08016CCD384009082A5 /* Common.m */; };
 		CE153B2816C4F35B005017FF /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = CE153AEE16C4F35B005017FF /* a.png */; };
 		CE153B2916C4F35B005017FF /* allow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = CE153AEF16C4F35B005017FF /* allow_left.png */; };
 		CE153B2A16C4F35B005017FF /* allow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = CE153AF016C4F35B005017FF /* allow_right.png */; };
@@ -79,8 +78,6 @@
 		CE83245516C49F9900D28A6C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE83245416C49F9900D28A6C /* SenTestingKit.framework */; };
 		CE83245616C49F9900D28A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE83242816C49F9800D28A6C /* UIKit.framework */; };
 		CE83245716C49F9900D28A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE83242A16C49F9800D28A6C /* Foundation.framework */; };
-		CE83245F16C49F9900D28A6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE83245D16C49F9900D28A6C /* InfoPlist.strings */; };
-		CE83246216C49F9900D28A6C /* bowlerd_scoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83246116C49F9900D28A6C /* bowlerd_scoreTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +91,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE153A9416C4D94E005017FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CE153A9816C4DA25005017FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		50CCB07F16CCD384009082A5 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		50CCB08016CCD384009082A5 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		CE153AEE16C4F35B005017FF /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		CE153AEF16C4F35B005017FF /* allow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allow_left.png; sourceTree = "<group>"; };
 		CE153AF016C4F35B005017FF /* allow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allow_right.png; sourceTree = "<group>"; };
@@ -171,10 +168,6 @@
 		CE83244816C49F9800D28A6C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CE83245316C49F9900D28A6C /* bowlerd_scoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bowlerd_scoreTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE83245416C49F9900D28A6C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CE83245C16C49F9900D28A6C /* bowlerd_scoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bowlerd_scoreTests-Info.plist"; sourceTree = "<group>"; };
-		CE83245E16C49F9900D28A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE83246016C49F9900D28A6C /* bowlerd_scoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bowlerd_scoreTests.h; sourceTree = "<group>"; };
-		CE83246116C49F9900D28A6C /* bowlerd_scoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bowlerd_scoreTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				CE83242E16C49F9800D28A6C /* bowlerd_score */,
-				CE83245A16C49F9900D28A6C /* bowlerd_scoreTests */,
 				CE83242716C49F9800D28A6C /* Frameworks */,
 				CE83242516C49F9800D28A6C /* Products */,
 			);
@@ -235,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				CE83243716C49F9800D28A6C /* AppDelegate.h */,
+				50CCB07F16CCD384009082A5 /* Common.h */,
+				50CCB08016CCD384009082A5 /* Common.m */,
 				CE83243816C49F9800D28A6C /* AppDelegate.m */,
 				CE83243A16C49F9800D28A6C /* MainStoryboard_iPhone.storyboard */,
 				CE83244016C49F9800D28A6C /* FirstViewController.h */,
@@ -254,27 +248,6 @@
 				CE83243116C49F9800D28A6C /* InfoPlist.strings */,
 				CE83243416C49F9800D28A6C /* main.m */,
 				CE83243616C49F9800D28A6C /* bowlerd_score-Prefix.pch */,
-				CE153A9416C4D94E005017FF /* Default.png */,
-				CE153A9816C4DA25005017FF /* Default@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE83245A16C49F9900D28A6C /* bowlerd_scoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE83246016C49F9900D28A6C /* bowlerd_scoreTests.h */,
-				CE83246116C49F9900D28A6C /* bowlerd_scoreTests.m */,
-				CE83245B16C49F9900D28A6C /* Supporting Files */,
-			);
-			path = bowlerd_scoreTests;
-			sourceTree = "<group>";
-		};
-		CE83245B16C49F9900D28A6C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE83245C16C49F9900D28A6C /* bowlerd_scoreTests-Info.plist */,
-				CE83245D16C49F9900D28A6C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -417,8 +390,6 @@
 			files = (
 				CE83243316C49F9800D28A6C /* InfoPlist.strings in Resources */,
 				CE83243C16C49F9800D28A6C /* MainStoryboard_iPhone.storyboard in Resources */,
-				CE153A9516C4D94E005017FF /* Default.png in Resources */,
-				CE153A9916C4DA25005017FF /* Default@2x.png in Resources */,
 				CE153B2816C4F35B005017FF /* a.png in Resources */,
 				CE153B2916C4F35B005017FF /* allow_left.png in Resources */,
 				CE153B2A16C4F35B005017FF /* allow_right.png in Resources */,
@@ -484,7 +455,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE83245F16C49F9900D28A6C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +485,7 @@
 				CE83243916C49F9800D28A6C /* AppDelegate.m in Sources */,
 				CE83244216C49F9800D28A6C /* FirstViewController.m in Sources */,
 				CE83244916C49F9800D28A6C /* SecondViewController.m in Sources */,
+				50CCB08116CCD384009082A5 /* Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +493,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE83246216C49F9900D28A6C /* bowlerd_scoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,14 +521,6 @@
 				CE83243B16C49F9800D28A6C /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		CE83245D16C49F9900D28A6C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE83245E16C49F9900D28A6C /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
