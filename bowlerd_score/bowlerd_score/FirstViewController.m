@@ -14,10 +14,61 @@
 
 @implementation FirstViewController
 
+@synthesize rankImage;
+@synthesize max;
+@synthesize min;
+@synthesize last;
+@synthesize average;
+
+@synthesize frame_1_1;
+@synthesize frame_1_2;
+@synthesize frame_1_sum;
+@synthesize frame_2_1;
+@synthesize frame_2_2;
+@synthesize frame_2_sum;
+@synthesize frame_3_1;
+@synthesize frame_3_2;
+@synthesize frame_3_sum;
+@synthesize frame_4_1;
+@synthesize frame_4_2;
+@synthesize frame_4_sum;
+@synthesize frame_5_1;
+@synthesize frame_5_2;
+@synthesize frame_5_sum;
+@synthesize frame_6_1;
+@synthesize frame_6_2;
+@synthesize frame_6_sum;
+@synthesize frame_7_1;
+@synthesize frame_7_2;
+@synthesize frame_7_sum;
+@synthesize frame_8_1;
+@synthesize frame_8_2;
+@synthesize frame_8_sum;
+@synthesize frame_9_1;
+@synthesize frame_9_2;
+@synthesize frame_9_sum;
+@synthesize frame_10_1;
+@synthesize frame_10_2;
+@synthesize frame_10_3;
+@synthesize frame_10_sum;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    Common *common = [[Common alloc] init];
+	
+    [rankImage setImage:[UIImage imageNamed:[common rank]]];
+    
+    [max setText:[NSString stringWithFormat:@"%d",[common max]]];
+    [min setText:[NSString stringWithFormat:@"%d",[common min]]];
+    [last setText:[NSString stringWithFormat:@"%d",[common lastScore]]];
+    [average setText:[NSString stringWithFormat:@"%d",[common average]]];
+    
+    [frame_1_1 setText:[NSString stringWithFormat:@"%d",[[[common gameScore] objectAtIndex:0] integerValue]]];
+    [frame_1_2 setText:[NSString stringWithFormat:@"%d",[[[common gameScore] objectAtIndex:1] integerValue]]];
+    [frame_1_sum setText:[NSString stringWithFormat:@"%d",[[[common gameScore] objectAtIndex:2] integerValue]]];
+    //TODO @takayuki Editing...here
 }
 
 - (void)viewDidUnload
@@ -58,7 +109,6 @@
     [self setFrame_10_3:nil];
     [self setFrame_10_sum:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -21,7 +21,7 @@
 -(id) init{
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    self.rank = [ud integerForKey:@"rank"];
+    self.rank = [ud stringForKey:@"rank"];
     self.max = [ud integerForKey:@"max"];
     self.min = [ud integerForKey:@"min"];
     self.lastScore = [ud integerForKey:@"lastScore"];
@@ -32,10 +32,10 @@
 }
 
 
--(void) setRank:(int)rank{
+-(void) setRank:(NSString *)rank{
     self.rank = rank;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setInteger:self.rank forKey:@"rank"];
+    [ud setObject:self.rank forKey:@"rank"];
 }
 
 

@@ -446,7 +446,7 @@
                                 <rect key="frame" x="248" y="124" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="F568C2EA-7C01-44C7-9C7A-E62E3F3BCB1E" id="qTR-lQ-rxu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="72C34684-DE47-4818-94B6-454FFFECC03D" id="qTR-lQ-rxu">
                                 <rect key="frame" x="63" y="130" width="27" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -686,7 +686,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="F568C2EA-7C01-44C7-9C7A-E62E3F3BCB1E" width="35" height="28">
+        <image name="72C34684-DE47-4818-94B6-454FFFECC03D" width="35" height="28">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESViRjbGFzc1ZOU1JlcHNcTlNJbWFnZUZsYWdzVk5TU2l6

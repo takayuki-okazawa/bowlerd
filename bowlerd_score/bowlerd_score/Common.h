@@ -10,16 +10,21 @@
 
 const NSString* DATA_KEY = @"GU3567hGERT7F";
 
+const NSString* RANK_IMAGE_S = @"s.png";
+const NSString* RANK_IMAGE_A = @"a.png";
+const NSString* RANK_IMAGE_B = @"b.png";
+const NSString* RANK_IMAGE_C = @"c.png";
+
 @interface Common : NSObject
 
-@property(nonatomic, readwrite) int rank;
+@property(nonatomic, readwrite) NSString *rank;
 @property(nonatomic, readwrite) int max;
 @property(nonatomic, readwrite) int min;
 @property(nonatomic, readwrite) int lastScore;
 @property(nonatomic, readwrite) int average;
 @property(nonatomic, readwrite) NSArray *gameScore;
 
--(void) setRank:(int)rank;
+-(void) setRank:(NSString *)rank;
 -(void) setMax:(int)max;
 -(void) setMin:(int)min;
 -(void) setLastScore:(int)lastScore;
