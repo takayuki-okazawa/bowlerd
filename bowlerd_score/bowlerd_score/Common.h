@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-const NSString* DATA_KEY = @"GU3567hGERT7F";
+static const NSString* DATA_KEY = @"GU3567hGERT7F";
 
-const NSString* RANK_IMAGE_S = @"s.png";
-const NSString* RANK_IMAGE_A = @"a.png";
-const NSString* RANK_IMAGE_B = @"b.png";
-const NSString* RANK_IMAGE_C = @"c.png";
+static const NSString* RANK_IMAGE_S = @"s.png";
+static const NSString* RANK_IMAGE_A = @"a.png";
+static const NSString* RANK_IMAGE_B = @"b.png";
+static const NSString* RANK_IMAGE_C = @"c.png";
 
 @interface Common : NSObject
 

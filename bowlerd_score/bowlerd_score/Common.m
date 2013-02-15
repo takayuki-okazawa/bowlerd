@@ -21,56 +21,69 @@
 -(id) init{
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    self.rank = [ud stringForKey:@"rank"];
-    self.max = [ud integerForKey:@"max"];
-    self.min = [ud integerForKey:@"min"];
-    self.lastScore = [ud integerForKey:@"lastScore"];
-    self.average = [ud integerForKey:@"average"];
-    self.gameScore = [ud arrayForKey:@"gameScore"];
+    NSLog(@"%@", [ud stringForKey:@"rank"]);
+    [self setRank:[ud stringForKey:@"rank"]];
+    [self setMax:[ud integerForKey:@"max"]];
+    [self setMin:[ud integerForKey:@"min"]];
+    [self setLastScore:[ud integerForKey:@"lastScore"]];
+    [self setAverage:[ud integerForKey:@"average"]];
+    [self setGameScore:[[NSArray alloc] initWithArray:[ud arrayForKey:@"gameScore"]]];
     
     return self;
 }
 
 
--(void) setRank:(NSString *)rank{
-    self.rank = rank;
+-(void) setRank:(NSString *)_rank{
+    
+    if(NULL == _rank){
+        _rank = (NSString*)RANK_IMAGE_C;
+    }
+    rank = _rank;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setObject:self.rank forKey:@"rank"];
+    [ud setObject:rank forKey:@"rank"];
 }
 
 
--(void) setMax:(int)max{
-    self.max = max;
+-(void) setMax:(int)_max{
+    max = _max;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setInteger:self.max forKey:@"max"];
+    [ud setInteger:max forKey:@"max"];
 }
 
 
--(void) setMin:(int)min{
-    self.min = min;
+-(void) setMin:(int)_min{
+    min = _min;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setInteger:self.min forKey:@"min"];
+    [ud setInteger:min forKey:@"min"];
 }
 
 
--(void) setLastScore:(int)lastScore{
-    self.lastScore = lastScore;
+-(void) setLastScore:(int)_lastScore{
+    lastScore = _lastScore;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setInteger:self.lastScore forKey:@"lastScore"];
+    [ud setInteger:lastScore forKey:@"lastScore"];
 }
 
 
--(void) setAverage:(int)average{
-    self.average = average;
+-(void) setAverage:(int)_average{
+    average = _average;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setInteger:self.average forKey:@"average"];
+    [ud setInteger:average forKey:@"average"];
 }
 
 
--(void) setGameScore:(NSArray *)gameScore{
-    self.gameScore = gameScore;
+-(void) setGameScore:(NSArray *)_gameScore{
+    
+    if(NULL == _gameScore || 0 == [_gameScore count]){
+        _gameScore = [[NSArray alloc] initWithObjects:@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",
+                      @"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",
+                      @"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",
+                      @"0",nil];
+    }
+    
+    gameScore = [[NSArray alloc] initWithArray: _gameScore];
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setObject:self.gameScore forKey:@"gameScore"];
+    [ud setObject:gameScore forKey:@"gameScore"];
 
 }
 
