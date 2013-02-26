@@ -15,6 +15,17 @@ static const NSString* RANK_IMAGE_A = @"a.png";
 static const NSString* RANK_IMAGE_B = @"b.png";
 static const NSString* RANK_IMAGE_C = @"c.png";
 
+static const NSString* FRAME_NO_IMAGE_1 = @"n1.png";
+static const NSString* FRAME_NO_IMAGE_2 = @"n2.png";
+static const NSString* FRAME_NO_IMAGE_3 = @"n3.png";
+static const NSString* FRAME_NO_IMAGE_4 = @"n4.png";
+static const NSString* FRAME_NO_IMAGE_5 = @"n5.png";
+static const NSString* FRAME_NO_IMAGE_6 = @"n6.png";
+static const NSString* FRAME_NO_IMAGE_7 = @"n7.png";
+static const NSString* FRAME_NO_IMAGE_8 = @"n8.png";
+static const NSString* FRAME_NO_IMAGE_9 = @"n9.png";
+static const NSString* FRAME_NO_IMAGE_10 = @"n10.png";
+
 @interface Common : NSObject
 
 @property(nonatomic, readwrite) NSString *rank;
