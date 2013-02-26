@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--First View Controller - Data-->
@@ -446,7 +446,7 @@
                                 <rect key="frame" x="248" y="124" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="082B37B0-672B-4F24-8067-7763186425AE" id="qTR-lQ-rxu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="7CC0352A-5969-4BC3-95C4-8A9D87625F96" id="qTR-lQ-rxu">
                                 <rect key="frame" x="63" y="130" width="27" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -507,6 +507,22 @@
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="3" eventType="touchUpInside" id="9ln-SQ-tcR"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="byq-fj-0Pg">
+                                <rect key="frame" x="250" y="139" width="36" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="end.png">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="end:" destination="3" eventType="touchUpInside" id="Z4t-5p-6Nh"/>
+                                    <action selector="next:" destination="3" eventType="touchUpInside" id="ENf-My-sr3"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="n1.png" id="Yze-Sa-GXF">
@@ -698,11 +714,21 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="strike.png" id="Uya-bY-BAC">
+                                <rect key="frame" x="118" y="118" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="spare.png" id="BzJ-LS-CW1">
+                                <rect key="frame" x="174" y="117" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Score" image="score.png" id="6"/>
                     <connections>
+                        <outlet property="allowRight" destination="8mQ-fV-bxQ" id="MWA-ic-1xW"/>
+                        <outlet property="endButton" destination="byq-fj-0Pg" id="LsT-4z-sLc"/>
                         <outlet property="frame" destination="oLl-Rh-HOl" id="o1b-xZ-JGy"/>
                         <outlet property="frameNo" destination="Yze-Sa-GXF" id="QKl-Pg-auA"/>
                         <outlet property="lastScoer" destination="zjd-lU-Xl3" id="VUn-wA-mzs"/>
@@ -710,6 +736,8 @@
                         <outlet property="score2" destination="o3D-P1-RQu" id="9Qh-rL-Pk7"/>
                         <outlet property="score3" destination="LAX-8a-qcs" id="fHY-wo-obL"/>
                         <outlet property="scoreSum" destination="VZa-xN-fmo" id="eYz-Yk-6ci"/>
+                        <outlet property="spare" destination="BzJ-LS-CW1" id="pdo-FB-iWr"/>
+                        <outlet property="strike" destination="Uya-bY-BAC" id="KiM-HX-kWu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -738,7 +766,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="082B37B0-672B-4F24-8067-7763186425AE" width="35" height="28">
+        <image name="7CC0352A-5969-4BC3-95C4-8A9D87625F96" width="35" height="28">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESViRjbGFzc1ZOU1JlcHNcTlNJbWFnZUZsYWdzVk5TU2l6
@@ -839,7 +867,8 @@ rxHBEcQRyQAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABHLA
         <image name="b9.png" width="48" height="48"/>
         <image name="background.png" width="640" height="960"/>
         <image name="data.png" width="23" height="24"/>
-        <image name="frame.png" width="117" height="117"/>
+        <image name="end.png" width="70" height="151"/>
+        <image name="frame.png" width="225" height="225"/>
         <image name="frame_last_small.png" width="56" height="56"/>
         <image name="frame_small.png" width="56" height="56"/>
         <image name="initialization.png" width="235" height="39"/>
@@ -855,6 +884,8 @@ rxHBEcQRyQAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABHLA
         <image name="rank.png" width="174" height="40"/>
         <image name="score.png" width="30" height="29"/>
         <image name="setting.png" width="23" height="22"/>
+        <image name="spare.png" width="31" height="31"/>
+        <image name="strike.png" width="31" height="33"/>
         <image name="thisIs_frame.png" width="300" height="40"/>
         <image name="title.png" width="244" height="40"/>
         <image name="yes.png" width="61" height="39"/>
@@ -905,6 +936,7 @@ rxHBEcQRyQAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABHLA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="end:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="point_10:"/>
                 <relationship kind="action" name="point_1:"/>
@@ -916,6 +948,8 @@ rxHBEcQRyQAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABHLA
                 <relationship kind="action" name="point_7:"/>
                 <relationship kind="action" name="point_8:"/>
                 <relationship kind="action" name="point_9:"/>
+                <relationship kind="outlet" name="allowRight" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="endButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="frame" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="frameNo" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="lastScoer" candidateClass="UIImageView"/>
@@ -923,6 +957,8 @@ rxHBEcQRyQAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABHLA
                 <relationship kind="outlet" name="score2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="score3" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreSum" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spare" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="strike" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>

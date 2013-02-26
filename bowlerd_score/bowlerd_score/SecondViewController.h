@@ -23,10 +23,18 @@
 @property (weak, nonatomic) IBOutlet UIImageView *frame;
 
 @property (weak, nonatomic) IBOutlet UIImageView *lastScoer;
+@property (weak, nonatomic) IBOutlet UIButton *endButton;
+@property (weak, nonatomic) IBOutlet UIButton *allowRight;
+
+@property (weak, nonatomic) IBOutlet UIImageView *strike;
+@property (weak, nonatomic) IBOutlet UIImageView *spare;
+
+
 
 // Button
 - (IBAction)back:(id)sender;
 - (IBAction)next:(id)sender;
+- (IBAction)end:(id)sender;
 
 
 - (IBAction)point_1:(id)sender;

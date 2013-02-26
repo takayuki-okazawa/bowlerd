@@ -21,6 +21,8 @@
 @synthesize scoreSum;
 @synthesize lastScoer;
 @synthesize frame;
+@synthesize endButton;
+@synthesize allowRight;
 
 - (void)viewDidLoad
 {
@@ -47,6 +49,10 @@
     [self setLastScoer:nil];
     [self setFrame:nil];
     [self setScore3:nil];
+    [self setEndButton:nil];
+    [self setAllowRight:nil];
+    [self setStrike:nil];
+    [self setSpare:nil];
     [super viewDidUnload];
 }
 
@@ -64,6 +70,7 @@
         --page;
         select_area = 0;
         [frameNo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"n%d.png", page+1]]];
+        [frameNo setContentMode:UIViewContentModeCenter];
         [self changeFrame:page];
     }
 }
@@ -73,67 +80,104 @@
         ++page;
         select_area = 0;
         [frameNo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"n%d.png", page+1]]];
+        [frameNo setContentMode:UIViewContentModeCenter];
         [self changeFrame:page];
     }
 }
 
+- (IBAction)end:(id)sender {
+}
+
 - (IBAction)point_1:(id)sender {
-    [self editSelectErea:1];
-    [self cangeSelectErea];
+    if([self isPoint:1]){
+        [self editSelectErea:1];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_2:(id)sender {
-    [self editSelectErea:2];
-    [self cangeSelectErea];
+    if([self isPoint:2]){
+        [self editSelectErea:2];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_3:(id)sender {
-    [self editSelectErea:3];
-    [self cangeSelectErea];
+    if([self isPoint:3]){
+        [self editSelectErea:3];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_4:(id)sender {
-    [self editSelectErea:4];
-    [self cangeSelectErea];
+    if([self isPoint:4]){
+        [self editSelectErea:4];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_5:(id)sender {
-    [self editSelectErea:5];
-    [self cangeSelectErea];
+    if([self isPoint:5]){
+        [self editSelectErea:5];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_6:(id)sender {
-    [self editSelectErea:6];
-    [self cangeSelectErea];
+    if([self isPoint:6]){
+        [self editSelectErea:6];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_7:(id)sender {
-    [self editSelectErea:7];
-    [self cangeSelectErea];
-}
+    if([self isPoint:7]){
+        [self editSelectErea:7];
+        [self cangeSelectErea];
+    }}
 
 - (IBAction)point_8:(id)sender {
-    [self editSelectErea:8];
-    [self cangeSelectErea];
+    if([self isPoint:8]){
+        [self editSelectErea:8];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_9:(id)sender {
-    [self editSelectErea:9];
-    [self cangeSelectErea];
+    if([self isPoint:9]){
+        [self editSelectErea:9];
+        [self cangeSelectErea];
+    }
 }
 
 - (IBAction)point_10:(id)sender {
-    [self editSelectErea:10];
-    [self cangeSelectErea];
+    if([self isPoint:10]){
+        [self editSelectErea:10];
+        [self cangeSelectErea];
+    }
 }
 
 
 #pragma mark -
 #pragma mark Private Message
 
+-(BOOL)isPoint:(int)point {
+    BOOL flag = YES;
+    int point1 = [score1.text intValue];
+    int point2 = [score2.text intValue];
+    
+    if(10<(point1+point2+point)){
+        flag = NO;
+    }
+    
+    return flag;
+}
+
 - (void)changeFrame:(int)nowFrame {
     
     [score3 setHidden:YES];
+    [endButton setHidden:YES];
+    [allowRight setHidden:NO];
     [frame setImage:[UIImage imageNamed:@"frame.png"]];
     [scoreSum setFrame:CGRectMake(139, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
     
@@ -190,6 +234,8 @@
         [frame setImage:[UIImage imageNamed:@"frame_last.png"]];
         [scoreSum setFrame:CGRectMake(165, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
         [score3 setHidden:NO];
+        [endButton setHidden:NO];
+        [allowRight setHidden:YES];
     }
 }
 
