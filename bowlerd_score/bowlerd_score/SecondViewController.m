@@ -17,8 +17,10 @@
 @synthesize frameNo;
 @synthesize score1;
 @synthesize score2;
+@synthesize score3;
 @synthesize scoreSum;
 @synthesize lastScoer;
+@synthesize frame;
 
 - (void)viewDidLoad
 {
@@ -43,8 +45,9 @@
     [self setScore2:nil];
     [self setScoreSum:nil];
     [self setLastScoer:nil];
+    [self setFrame:nil];
+    [self setScore3:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -130,6 +133,10 @@
 
 - (void)changeFrame:(int)nowFrame {
     
+    [score3 setHidden:YES];
+    [frame setImage:[UIImage imageNamed:@"frame.png"]];
+    [scoreSum setFrame:CGRectMake(139, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
+    
     if(0 == nowFrame){
         [score1 setText:[editGameScoreArray objectAtIndex:0]];
         [score2 setText:[editGameScoreArray objectAtIndex:1]];
@@ -178,9 +185,11 @@
     else if(9 == nowFrame){
         [score1 setText:[editGameScoreArray objectAtIndex:27]];
         [score2 setText:[editGameScoreArray objectAtIndex:28]];
-        //TODO @takayuki @add propaty
-//        [score3 setText:[editGameScoreArray objectAtIndex:29]];
+        [score3 setText:[editGameScoreArray objectAtIndex:29]];
         [scoreSum setText:[editGameScoreArray objectAtIndex:30]];
+        [frame setImage:[UIImage imageNamed:@"frame_last.png"]];
+        [scoreSum setFrame:CGRectMake(165, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
+        [score3 setHidden:NO];
     }
 }
 
@@ -198,8 +207,7 @@
 
 - (void)editSelectErea:(int)point{
     if(1 == select_area && 10 == page){
-        //TODO @takayuki @add propaty
-//        [score3 setText:[NSString stringWithFormat:@"%d",point]];
+        [score3 setText:[NSString stringWithFormat:@"%d",point]];
         [editGameScoreArray replaceObjectAtIndex:29 withObject:[NSString stringWithFormat:@"%d", point]];
         
         int point1 = [score1.text intValue];

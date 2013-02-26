@@ -18,7 +18,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *frameNo;
 @property (weak, nonatomic) IBOutlet UILabel *score1;
 @property (weak, nonatomic) IBOutlet UILabel *score2;
+@property (weak, nonatomic) IBOutlet UILabel *score3;
 @property (weak, nonatomic) IBOutlet UILabel *scoreSum;
+@property (weak, nonatomic) IBOutlet UIImageView *frame;
 
 @property (weak, nonatomic) IBOutlet UIImageView *lastScoer;
 

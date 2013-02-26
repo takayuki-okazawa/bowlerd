@@ -446,7 +446,7 @@
                                 <rect key="frame" x="248" y="124" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="8B2FDA34-9C1A-481C-9971-AA31BA833042" id="qTR-lQ-rxu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="082B37B0-672B-4F24-8067-7763186425AE" id="qTR-lQ-rxu">
                                 <rect key="frame" x="63" y="130" width="27" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -691,15 +691,24 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LAX-8a-qcs">
+                                <rect key="frame" x="111" y="166" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Score" image="score.png" id="6"/>
                     <connections>
+                        <outlet property="frame" destination="oLl-Rh-HOl" id="o1b-xZ-JGy"/>
                         <outlet property="frameNo" destination="Yze-Sa-GXF" id="QKl-Pg-auA"/>
                         <outlet property="lastScoer" destination="zjd-lU-Xl3" id="VUn-wA-mzs"/>
                         <outlet property="score1" destination="sE0-5y-Hlv" id="Rwl-4N-4Pg"/>
                         <outlet property="score2" destination="o3D-P1-RQu" id="9Qh-rL-Pk7"/>
+                        <outlet property="score3" destination="LAX-8a-qcs" id="fHY-wo-obL"/>
                         <outlet property="scoreSum" destination="VZa-xN-fmo" id="eYz-Yk-6ci"/>
                     </connections>
                 </viewController>
@@ -729,7 +738,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="8B2FDA34-9C1A-481C-9971-AA31BA833042" width="35" height="28">
+        <image name="082B37B0-672B-4F24-8067-7763186425AE" width="35" height="28">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESViRjbGFzc1ZOU1JlcHNcTlNJbWFnZUZsYWdzVk5TU2l6
@@ -907,10 +916,12 @@ rxHBEcQRyQAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABHLA
                 <relationship kind="action" name="point_7:"/>
                 <relationship kind="action" name="point_8:"/>
                 <relationship kind="action" name="point_9:"/>
+                <relationship kind="outlet" name="frame" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="frameNo" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="lastScoer" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="score1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="score2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="score3" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreSum" candidateClass="UILabel"/>
             </relationships>
         </class>
