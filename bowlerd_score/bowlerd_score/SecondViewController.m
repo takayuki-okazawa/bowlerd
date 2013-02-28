@@ -72,6 +72,7 @@
         [frameNo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"n%d.png", page+1]]];
         [frameNo setContentMode:UIViewContentModeCenter];
         [self changeFrame:page];
+        [self changePoint];
     }
 }
 
@@ -82,6 +83,7 @@
         [frameNo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"n%d.png", page+1]]];
         [frameNo setContentMode:UIViewContentModeCenter];
         [self changeFrame:page];
+        [self changePoint];
     }
 }
 
@@ -361,7 +363,38 @@
     int point9 = [[editGameScoreArray objectAtIndex:26] intValue];
     int point10 = [[editGameScoreArray objectAtIndex:30] intValue];
     
-    int sum = point1 +point2 +point3 +point4 +point5 +point6 +point7 +point8 +point9 +point10;
+    int sum;
+    if(0 == page){
+        sum = point1;
+    }
+    else if(1 == page){
+        sum = point1 +point2;
+    }
+    else if(2 == page){
+        sum = point1 +point2 +point3;
+    }
+    else if(3 == page){
+        sum = point1 +point2 +point3 +point4;
+    }
+    else if(4 == page){
+        sum = point1 +point2 +point3 +point4 +point5;
+    }
+    else if(5 == page){
+        sum = point1 +point2 +point3 +point4 +point5 +point6;
+    }
+    else if(6 == page){
+        sum = point1 +point2 +point3 +point4 +point5 +point6 +point7;
+    }
+    else if(7 == page){
+        sum = point1 +point2 +point3 +point4 +point5 +point6 +point7 +point8;
+    }
+    else if(8 == page){
+        sum = point1 +point2 +point3 +point4 +point5 +point6 +point7 +point8 +point9;
+    }
+    else if(9 == page){
+        sum = point1 +point2 +point3 +point4 +point5 +point6 +point7 +point8 +point9 +point10;
+    }
+
     [scoreSum setText:[NSString stringWithFormat:@"%d",sum]];
 }
 
