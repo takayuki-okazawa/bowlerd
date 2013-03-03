@@ -23,6 +23,8 @@
 @synthesize frame;
 @synthesize endButton;
 @synthesize allowRight;
+@synthesize strike;
+@synthesize spare;
 
 - (void)viewDidLoad
 {
@@ -66,7 +68,7 @@
 }
 
 - (IBAction)back:(id)sender {
-    if(0<page){
+    if(0<page && [self is10over]){
         --page;
         select_area = 0;
         [frameNo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"n%d.png", page+1]]];
@@ -74,10 +76,13 @@
         [self changeFrame:page];
         [self changePoint];
     }
+    else if (![self is10over]){
+        [self is10overMessage];
+    }
 }
 
 - (IBAction)next:(id)sender {
-    if(9>page){
+    if(9>page && [self is10over]){
         ++page;
         select_area = 0;
         [frameNo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"n%d.png", page+1]]];
@@ -85,95 +90,76 @@
         [self changeFrame:page];
         [self changePoint];
     }
+    else if (![self is10over]){
+        [self is10overMessage];
+    }
 }
 
 - (IBAction)end:(id)sender {
+    Common *common = [[Common alloc] init];
+    [common setGameScore:editGameScoreArray];
+    
+    int point10 = [[editGameScoreArray objectAtIndex:30] intValue];
+    
+    [common setMax:point10];
+    [common setMin:point10];
+    [common setAverage:point10];
+    
 }
 
 - (IBAction)point_1:(id)sender {
-    if([self isPoint:1]){
-        [self editSelectErea:1];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:1];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_2:(id)sender {
-    if([self isPoint:2]){
-        [self editSelectErea:2];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:2];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_3:(id)sender {
-    if([self isPoint:3]){
-        [self editSelectErea:3];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:3];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_4:(id)sender {
-    if([self isPoint:4]){
-        [self editSelectErea:4];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:4];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_5:(id)sender {
-    if([self isPoint:5]){
-        [self editSelectErea:5];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:5];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_6:(id)sender {
-    if([self isPoint:6]){
-        [self editSelectErea:6];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:6];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_7:(id)sender {
-    if([self isPoint:7]){
-        [self editSelectErea:7];
-        [self cangeSelectErea];
-    }}
+    [self editSelectErea:7];
+    [self cangeSelectErea];
+}
 
 - (IBAction)point_8:(id)sender {
-    if([self isPoint:8]){
-        [self editSelectErea:8];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:8];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_9:(id)sender {
-    if([self isPoint:9]){
-        [self editSelectErea:9];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:9];
+    [self cangeSelectErea];
 }
 
 - (IBAction)point_10:(id)sender {
-    if([self isPoint:10]){
-        [self editSelectErea:10];
-        [self cangeSelectErea];
-    }
+    [self editSelectErea:10];
+    [self cangeSelectErea];
 }
 
 
 #pragma mark -
 #pragma mark Private Message
-
--(BOOL)isPoint:(int)point {
-    BOOL flag = YES;
-    int point1 = [score1.text intValue];
-    int point2 = [score2.text intValue];
-    
-    if(10<(point1+point2+point)){
-        flag = NO;
-    }
-    
-    return flag;
-}
 
 - (void)changeFrame:(int)nowFrame {
     
@@ -241,6 +227,29 @@
     }
 }
 
+-(BOOL)is10over{
+    BOOL flag = YES;
+    int point1 = [score1.text intValue];
+    int point2 = [score2.text intValue];
+    if(10 < (point1+point2)){
+        flag = NO;
+    }
+    return flag;
+}
+
+-(void)is10overMessage{
+    
+    UIAlertView *alert =
+    [[UIAlertView alloc]
+     initWithTitle:@"10 Over"
+     message:@"Need Edit Points"
+     delegate:nil
+     cancelButtonTitle:nil
+     otherButtonTitles:@"OK", nil];
+    
+    [alert show];
+}
+
 - (void)cangeSelectErea{
     if(1 == select_area && 10 == page){
         select_area = 2;
@@ -254,6 +263,7 @@
 }
 
 - (void)editSelectErea:(int)point{
+    
     if(1 == select_area && 10 == page){
         [score3 setText:[NSString stringWithFormat:@"%d",point]];
         [editGameScoreArray replaceObjectAtIndex:29 withObject:[NSString stringWithFormat:@"%d", point]];
@@ -266,11 +276,21 @@
     else if(0 == select_area){
         [score1 setText:[NSString stringWithFormat:@"%d",point]];
         
+        if(10 == point){
+            [score2 setText:@"0"];
+        }
+        
+        int point1 = point;
+        int point2 = [score2.text intValue];
+        int point3 = point1+point2;
+        
         if(0 == page){
             [editGameScoreArray replaceObjectAtIndex:0 withObject:[NSString stringWithFormat:@"%d", point]];
+            [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
         }
         else if(1 == page){
             [editGameScoreArray replaceObjectAtIndex:3 withObject:[NSString stringWithFormat:@"%d", point]];
+            [editGameScoreArray replaceObjectAtIndex:5 withObject:[NSString stringWithFormat:@"%d", point3]];
         }
         else if(2 == page){
             [editGameScoreArray replaceObjectAtIndex:6 withObject:[NSString stringWithFormat:@"%d", point]];
@@ -303,7 +323,7 @@
         [score2 setText:[NSString stringWithFormat:@"%d",point]];
         
         int point1 = [score1.text intValue];
-        int point2 = [score2.text intValue];
+        int point2 = point;
         int point3 = point1+point2;
         
         if(0 == page){
@@ -352,6 +372,30 @@
 }
 
 - (void) changePoint{
+    
+    //View Strike & Spere
+    int now_point1 = [score1.text intValue];
+    if(10 == now_point1){
+        [strike setHidden:NO];
+        [score1 setHidden:YES];
+        [score2 setHidden:YES];
+    }
+    else{
+        [strike setHidden:YES];
+        [score1 setHidden:NO];
+    }
+    
+    int now_point2 = [score2.text intValue];
+    if(10 == now_point1+now_point2 && 0 != now_point2){
+        [spare setHidden:NO];
+        [score2 setHidden:YES];
+    }
+    else if(0 != now_point2){
+        [spare setHidden:YES];
+        [score2 setHidden:NO];
+    }
+    
+    //Sum Points
     int point1 = [[editGameScoreArray objectAtIndex:2] intValue];
     int point2 = [[editGameScoreArray objectAtIndex:5] intValue];
     int point3 = [[editGameScoreArray objectAtIndex:8] intValue];
