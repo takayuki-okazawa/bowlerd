@@ -105,6 +105,7 @@
     [common setMin:point10];
     [common setAverage:point10];
     
+    [self viewDidLoad];
 }
 
 - (IBAction)point_1:(id)sender {
@@ -251,8 +252,11 @@
 }
 
 - (void)cangeSelectErea{
-    if(1 == select_area && 10 == page){
+    if(1 == select_area && 9 == page){
         select_area = 2;
+    }
+    else if(2 == select_area){
+        select_area = 0;
     }
     else if(0 == select_area){
         select_area = 1;
@@ -264,14 +268,29 @@
 
 - (void)editSelectErea:(int)point{
     
-    if(1 == select_area && 10 == page){
+    if(1 == select_area && 9 == page){
+        [score2 setText:[NSString stringWithFormat:@"%d",point]];
+        [editGameScoreArray replaceObjectAtIndex:28 withObject:[NSString stringWithFormat:@"%d", point]];
+        
+        int point1 = [score1.text intValue];
+        int point2 = [score2.text intValue];
+        int point3 = [score3.text intValue];
+        int point4 = point1+point2+point3;
+        [editGameScoreArray replaceObjectAtIndex:30 withObject:[NSString stringWithFormat:@"%d", point4]];
+        
+        [self changePoint];
+    }
+    else if(2 == select_area){
         [score3 setText:[NSString stringWithFormat:@"%d",point]];
         [editGameScoreArray replaceObjectAtIndex:29 withObject:[NSString stringWithFormat:@"%d", point]];
         
         int point1 = [score1.text intValue];
         int point2 = [score2.text intValue];
-        int point3 = point1+point2;
-        [editGameScoreArray replaceObjectAtIndex:30 withObject:[NSString stringWithFormat:@"%d", point3]];
+        int point3 = [score3.text intValue];
+        int point4 = point1+point2+point3;
+        [editGameScoreArray replaceObjectAtIndex:30 withObject:[NSString stringWithFormat:@"%d", point4]];
+        
+        [self changePoint];
     }
     else if(0 == select_area){
         [score1 setText:[NSString stringWithFormat:@"%d",point]];
@@ -320,10 +339,16 @@
         [self changePoint];
     }
     else{
-        [score2 setText:[NSString stringWithFormat:@"%d",point]];
         
         int point1 = [score1.text intValue];
         int point2 = point;
+        
+        if(10 == point1){
+            point = 0;
+            point2 = 0;
+        }
+        
+        [score2 setText:[NSString stringWithFormat:@"%d",point]];
         int point3 = point1+point2;
         
         if(0 == page){
@@ -377,6 +402,7 @@
     int now_point1 = [score1.text intValue];
     if(10 == now_point1){
         [strike setHidden:NO];
+        [spare setHidden:YES];
         [score1 setHidden:YES];
         [score2 setHidden:YES];
     }

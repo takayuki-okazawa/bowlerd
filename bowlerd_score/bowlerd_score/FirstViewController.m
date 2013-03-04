@@ -19,6 +19,7 @@
 @synthesize min;
 @synthesize last;
 @synthesize average;
+@synthesize tabBarFirst;
 
 @synthesize frame_1_1;
 @synthesize frame_1_2;
@@ -57,7 +58,6 @@
     [super viewDidLoad];
     
     Common *common = [[Common alloc] init];
-//	NSLog(@"%@", [common rank]);
     [rankImage setImage:[UIImage imageNamed:[common rank]]];
     
     [max setText:[NSString stringWithFormat:@"%d",[common max]]];
@@ -146,6 +146,7 @@
     [self setFrame_10_2:nil];
     [self setFrame_10_3:nil];
     [self setFrame_10_sum:nil];
+    [self setTabBarFirst:nil];
     [super viewDidUnload];
 }
 
@@ -156,6 +157,11 @@
     } else {
         return YES;
     }
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    [self viewDidLoad];
+    return YES;
 }
 
 @end

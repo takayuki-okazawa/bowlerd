@@ -380,6 +380,7 @@
                         <outlet property="max" destination="PpK-Fg-W4j" id="RMW-Ct-h54"/>
                         <outlet property="min" destination="ZlJ-IM-d61" id="rMU-26-f8b"/>
                         <outlet property="rankImage" destination="Oze-8h-NgK" id="Iq0-gs-c7Q"/>
+                        <outlet property="tabBarFirst" destination="7" id="SM0-MQ-dJy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -446,7 +447,7 @@
                                 <rect key="frame" x="248" y="124" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="4C679E77-0A60-40FF-BD9A-BA06F38267D5" id="qTR-lQ-rxu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="8E64664E-A17B-4364-9E4E-00A5ECF04522" id="qTR-lQ-rxu">
                                 <rect key="frame" x="63" y="130" width="27" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -766,7 +767,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="4C679E77-0A60-40FF-BD9A-BA06F38267D5" width="35" height="28">
+        <image name="8E64664E-A17B-4364-9E4E-00A5ECF04522" width="35" height="28">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESViRjbGFzc1ZOU1JlcHNcTlNJbWFnZUZsYWdzVk5TU2l6
@@ -930,6 +931,7 @@ rxHBEcQRyQAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABHLA
                 <relationship kind="outlet" name="max" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="min" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rankImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tabBarFirst" candidateClass="UITabBarItem"/>
             </relationships>
         </class>
         <class className="SecondViewController" superclassName="UIViewController">

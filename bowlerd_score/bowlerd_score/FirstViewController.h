@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Common.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<UITabBarControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *rankImage;
+@property (weak, nonatomic) IBOutlet UITabBarItem *tabBarFirst;
 
 @property (weak, nonatomic) IBOutlet UILabel *max;
 @property (weak, nonatomic) IBOutlet UILabel *min;
