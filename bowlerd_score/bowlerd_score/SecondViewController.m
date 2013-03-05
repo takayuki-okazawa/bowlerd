@@ -475,6 +475,7 @@
     }
 
     [scoreSum setText:[NSString stringWithFormat:@"%d",sum]];
+    [self bonusPoint];
 }
 
 
@@ -509,37 +510,117 @@
     int point20 = [[editGameScoreArray objectAtIndex:28] intValue];
     
     //Frame3
-    int point21 = [[editGameScoreArray objectAtIndex:29] intValue];
+    int point21 = [[editGameScoreArray objectAtIndex:2] intValue];
+    int point22 = [[editGameScoreArray objectAtIndex:5] intValue];
+    int point23 = [[editGameScoreArray objectAtIndex:8] intValue];
+    int point24 = [[editGameScoreArray objectAtIndex:11] intValue];
+    int point25 = [[editGameScoreArray objectAtIndex:14] intValue];
+    int point26 = [[editGameScoreArray objectAtIndex:17] intValue];
+    int point27 = [[editGameScoreArray objectAtIndex:20] intValue];
+    int point28 = [[editGameScoreArray objectAtIndex:23] intValue];
+    int point29 = [[editGameScoreArray objectAtIndex:26] intValue];
+    int point30 = [[editGameScoreArray objectAtIndex:29] intValue];
     
     if(10 == point1){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point21 = 10 + point2;
+        if(10 == point2){
+            point21 += point3;
+        }
+        else{
+            point21 += point12;
+        }
+        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point21]];
     }
     if(10 == point2){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point22 = 10 + point3;
+        if(10 == point3){
+            point22 += point4;
+        }
+        else{
+            point22 += point13;
+        }
+        [editGameScoreArray replaceObjectAtIndex:5 withObject:[NSString stringWithFormat:@"%d", point22]];
     }
     if(10 == point3){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point23 = 10 + point4;
+        if(10 == point4){
+            point23 += point5;
+        }
+        else{
+            point23 += point14;
+        }
+        [editGameScoreArray replaceObjectAtIndex:8 withObject:[NSString stringWithFormat:@"%d", point23]];
     }
     if(10 == point4){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point24 = 10 + point5;
+        if(10 == point5){
+            point24 += point6;
+        }
+        else{
+            point24 += point14;
+        }
+        [editGameScoreArray replaceObjectAtIndex:11 withObject:[NSString stringWithFormat:@"%d", point24]];
     }
     if(10 == point5){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point25= 10 + point6;
+        if(10 == point6){
+            point25 += point7;
+        }
+        else{
+            point25 += point15;
+        }
+        [editGameScoreArray replaceObjectAtIndex:14 withObject:[NSString stringWithFormat:@"%d", point25]];
     }
     if(10 == point6){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point26= 10 + point7;
+        if(10 == point7){
+            point26 += point8;
+        }
+        else{
+            point26 += point16;
+        }
+        [editGameScoreArray replaceObjectAtIndex:17 withObject:[NSString stringWithFormat:@"%d", point26]];
+
     }
     if(10 == point7){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point27= 10 + point8;
+        if(10 == point8){
+            point27 += point9;
+        }
+        else{
+            point27 += point17;
+        }
+        [editGameScoreArray replaceObjectAtIndex:20 withObject:[NSString stringWithFormat:@"%d", point27]];
     }
     if(10 == point8){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point28= 10 + point9;
+        if(10 == point9){
+            point28 += point10;
+        }
+        else{
+            point28 += point18;
+        }
+        [editGameScoreArray replaceObjectAtIndex:23 withObject:[NSString stringWithFormat:@"%d", point28]];
     }
     if(10 == point9){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point29= 10 + point10;
+        if(10 == point10){
+            point29 += point11;
+        }
+        else{
+            point29 += point19;
+        }
+        [editGameScoreArray replaceObjectAtIndex:26 withObject:[NSString stringWithFormat:@"%d", point29]];
     }
     if(10 == point10){
-        [editGameScoreArray replaceObjectAtIndex:2 withObject:[NSString stringWithFormat:@"%d", point3]];
+        point30= 10 + point11;
+        if(10 == point11){
+            point30 += point12;
+        }
+        else{
+            point30 += point20;
+        }
+        [editGameScoreArray replaceObjectAtIndex:29 withObject:[NSString stringWithFormat:@"%d", point30]];
     }
 
 }
