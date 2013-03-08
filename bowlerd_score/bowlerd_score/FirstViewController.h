@@ -70,4 +70,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *frame_10_3;
 @property (weak, nonatomic) IBOutlet UILabel *frame_10_sum;
 
+- (IBAction)refrash:(id)sender;
+
 @end

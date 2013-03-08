@@ -39,6 +39,7 @@
 - (IBAction)end:(id)sender;
 
 
+- (IBAction)point_0:(id)sender;
 - (IBAction)point_1:(id)sender;
 - (IBAction)point_2:(id)sender;
 - (IBAction)point_3:(id)sender;

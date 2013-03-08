@@ -108,6 +108,11 @@
     [self viewDidLoad];
 }
 
+- (IBAction)point_0:(id)sender {
+    [self editSelectErea:0];
+    [self cangeSelectErea];
+}
+
 - (IBAction)point_1:(id)sender {
     [self editSelectErea:1];
     [self cangeSelectErea];
@@ -221,10 +226,10 @@
         [score3 setText:[editGameScoreArray objectAtIndex:29]];
         [scoreSum setText:[editGameScoreArray objectAtIndex:30]];
         [frame setImage:[UIImage imageNamed:@"frame_last.png"]];
-        [scoreSum setFrame:CGRectMake(165, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
+        [scoreSum setFrame:CGRectMake(170, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
         [score3 setHidden:NO];
-        [endButton setHidden:NO];
-        [allowRight setHidden:YES];
+//        [endButton setHidden:NO];
+//        [allowRight setHidden:YES];
     }
 }
 

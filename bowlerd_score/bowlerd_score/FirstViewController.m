@@ -164,4 +164,7 @@
     return YES;
 }
 
+- (IBAction)refrash:(id)sender {
+    [self viewDidLoad];
+}
 @end
