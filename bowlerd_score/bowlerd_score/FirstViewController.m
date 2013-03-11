@@ -69,44 +69,54 @@
     
     [frame_1_1 setText:[gameScoreArray objectAtIndex:0]];
     [frame_1_2 setText:[gameScoreArray objectAtIndex:1]];
-    [frame_1_sum setText:[gameScoreArray objectAtIndex:2]];
+    int sum = [[gameScoreArray objectAtIndex:2] intValue];
+    [frame_1_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_2_1 setText:[gameScoreArray objectAtIndex:3]];
     [frame_2_2 setText:[gameScoreArray objectAtIndex:4]];
-    [frame_2_sum setText:[gameScoreArray objectAtIndex:5]];
+    sum += [[gameScoreArray objectAtIndex:5] intValue];
+    [frame_2_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_3_1 setText:[gameScoreArray objectAtIndex:6]];
     [frame_3_2 setText:[gameScoreArray objectAtIndex:7]];
-    [frame_3_sum setText:[gameScoreArray objectAtIndex:8]];
+    sum += [[gameScoreArray objectAtIndex:8] intValue];
+    [frame_3_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_4_1 setText:[gameScoreArray objectAtIndex:9]];
     [frame_4_2 setText:[gameScoreArray objectAtIndex:10]];
-    [frame_4_sum setText:[gameScoreArray objectAtIndex:11]];
+    sum += [[gameScoreArray objectAtIndex:11] intValue];
+    [frame_4_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_5_1 setText:[gameScoreArray objectAtIndex:12]];
     [frame_5_2 setText:[gameScoreArray objectAtIndex:13]];
-    [frame_5_sum setText:[gameScoreArray objectAtIndex:14]];
+    sum += [[gameScoreArray objectAtIndex:14] intValue];
+    [frame_5_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_6_1 setText:[gameScoreArray objectAtIndex:15]];
     [frame_6_2 setText:[gameScoreArray objectAtIndex:16]];
-    [frame_6_sum setText:[gameScoreArray objectAtIndex:17]];
+    sum += [[gameScoreArray objectAtIndex:17] intValue];
+    [frame_6_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_7_1 setText:[gameScoreArray objectAtIndex:18]];
     [frame_7_2 setText:[gameScoreArray objectAtIndex:19]];
-    [frame_7_sum setText:[gameScoreArray objectAtIndex:20]];
+    sum += [[gameScoreArray objectAtIndex:20] intValue];
+    [frame_7_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_8_1 setText:[gameScoreArray objectAtIndex:21]];
     [frame_8_2 setText:[gameScoreArray objectAtIndex:22]];
-    [frame_8_sum setText:[gameScoreArray objectAtIndex:23]];
+    sum += [[gameScoreArray objectAtIndex:23] intValue];
+    [frame_8_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_9_1 setText:[gameScoreArray objectAtIndex:24]];
     [frame_9_2 setText:[gameScoreArray objectAtIndex:25]];
-    [frame_9_sum setText:[gameScoreArray objectAtIndex:26]];
+    sum += [[gameScoreArray objectAtIndex:26] intValue];
+    [frame_9_sum setText:[NSString stringWithFormat:@"%d", sum]];
     
     [frame_10_1 setText:[gameScoreArray objectAtIndex:27]];
     [frame_10_2 setText:[gameScoreArray objectAtIndex:28]];
     [frame_10_3 setText:[gameScoreArray objectAtIndex:29]];
-    [frame_10_sum setText:[gameScoreArray objectAtIndex:30]];
+    sum += [[gameScoreArray objectAtIndex:30] intValue];
+    [frame_10_sum setText:[NSString stringWithFormat:@"%d", sum]];
 }
 
 - (void)viewDidUnload
