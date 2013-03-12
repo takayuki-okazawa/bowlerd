@@ -58,14 +58,14 @@
     [super viewDidLoad];
     
     Common *common = [[Common alloc] init];
-    [rankImage setImage:[UIImage imageNamed:[common rank]]];
+    [rankImage setImage:[UIImage imageNamed:[common getRank]]];
     
-    [max setText:[NSString stringWithFormat:@"%d",[common max]]];
-    [min setText:[NSString stringWithFormat:@"%d",[common min]]];
-    [last setText:[NSString stringWithFormat:@"%d",[common lastScore]]];
-    [average setText:[NSString stringWithFormat:@"%d",[common average]]];
+    [max setText:[NSString stringWithFormat:@"%d",[common getMax]]];
+    [min setText:[NSString stringWithFormat:@"%d",[common getMin]]];
+    [last setText:[NSString stringWithFormat:@"%d",[common getLastScore]]];
+    [average setText:[NSString stringWithFormat:@"%d",[common getAverage]]];
     
-    NSArray *gameScoreArray = [[NSArray alloc] initWithArray:[common gameScore]];
+    NSArray *gameScoreArray = [[NSArray alloc] initWithArray:[common getGameScore]];
     
     [frame_1_1 setText:[gameScoreArray objectAtIndex:0]];
     [frame_1_2 setText:[gameScoreArray objectAtIndex:1]];

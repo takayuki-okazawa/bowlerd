@@ -28,14 +28,14 @@ static const NSString* FRAME_NO_IMAGE_10 = @"n10.png";
 
 @interface Common : NSObject
 
-@property(nonatomic, readwrite) NSString *rank;
-@property(nonatomic, readwrite) int max;
-@property(nonatomic, readwrite) int min;
-@property(nonatomic, readwrite) int lastScore;
-@property(nonatomic, readwrite) int average;
-@property(nonatomic, readwrite) NSArray *gameScore;
 
--(void) setRank:(NSString *)rank;
+-(NSString*) getRank;
+-(int) getMax;
+-(int) getMin;
+-(int) getLastScore;
+-(int) getAverage;
+-(NSArray*) getGameScore;
+
 -(void) setMax:(int)max;
 -(void) setMin:(int)min;
 -(void) setLastScore:(int)lastScore;

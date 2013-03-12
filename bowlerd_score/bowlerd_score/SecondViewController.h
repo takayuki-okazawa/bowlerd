@@ -36,7 +36,8 @@
 // Button
 - (IBAction)back:(id)sender;
 - (IBAction)next:(id)sender;
-- (IBAction)end:(id)sender;
+- (IBAction)save:(id)sender;
+- (IBAction)load:(id)sender;
 
 
 - (IBAction)point_0:(id)sender;

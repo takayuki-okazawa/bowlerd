@@ -32,10 +32,17 @@
 	
     page = 0;
     select_area = 0;
-    editGameScoreArray = [[NSMutableArray alloc] initWithObjects:@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",
-                               @"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",
-                               @"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0",
-                               @"0",nil];
+    editGameScoreArray = [[NSMutableArray alloc] initWithObjects:
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",
+                          @"0",@"0",@"0",@"0",nil];
     
     [score1 setText:[editGameScoreArray objectAtIndex:0]];
     [score2 setText:[editGameScoreArray objectAtIndex:1]];
@@ -95,17 +102,30 @@
     }
 }
 
-- (IBAction)end:(id)sender {
+- (IBAction)save:(id)sender {
+
     Common *common = [[Common alloc] init];
     [common setGameScore:editGameScoreArray];
     
-    int point10 = [[editGameScoreArray objectAtIndex:30] intValue];
+    int point = [[editGameScoreArray objectAtIndex:2] intValue];
+    point += [[editGameScoreArray objectAtIndex:5] intValue];
+    point += [[editGameScoreArray objectAtIndex:8] intValue];
+    point += [[editGameScoreArray objectAtIndex:11] intValue];
+    point += [[editGameScoreArray objectAtIndex:14] intValue];
+    point += [[editGameScoreArray objectAtIndex:17] intValue];
+    point += [[editGameScoreArray objectAtIndex:20] intValue];
+    point += [[editGameScoreArray objectAtIndex:23] intValue];
+    point += [[editGameScoreArray objectAtIndex:26] intValue];
+    point += [[editGameScoreArray objectAtIndex:30] intValue];
     
-    [common setMax:point10];
-    [common setMin:point10];
-    [common setAverage:point10];
+    [common setMax:point];
+    [common setMin:point];
+    [common setLastScore:point];
+    [common setAverage:point];
     
-    [self viewDidLoad];
+}
+
+- (IBAction)load:(id)sender {
 }
 
 - (IBAction)point_0:(id)sender {
@@ -414,11 +434,13 @@
     
     //View Strike & Spere
     int now_point1 = [score1.text intValue];
+    BOOL strikeFlag = NO;
     if(10 == now_point1){
         [strike setHidden:NO];
         [spare setHidden:YES];
         [score1 setHidden:YES];
         [score2 setHidden:YES];
+        strikeFlag = YES;
     }
     else{
         [strike setHidden:YES];
@@ -426,11 +448,11 @@
     }
     
     int now_point2 = [score2.text intValue];
-    if(10 == now_point1+now_point2 && 0 != now_point2){
+    if(10 == now_point1+now_point2 && !strikeFlag){
         [spare setHidden:NO];
         [score2 setHidden:YES];
     }
-    else if(0 != now_point2){
+    else if(!strikeFlag){
         [spare setHidden:YES];
         [score2 setHidden:NO];
     }
@@ -525,6 +547,9 @@
     int point28 = [[editGameScoreArray objectAtIndex:23] intValue];
     int point29 = [[editGameScoreArray objectAtIndex:26] intValue];
     int point30 = [[editGameScoreArray objectAtIndex:29] intValue];
+    
+    //Frame4
+    int point31 = [[editGameScoreArray objectAtIndex:30] intValue];
     
     if(10 == point1){
         point21 = 10 + point2;
