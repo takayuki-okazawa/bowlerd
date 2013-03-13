@@ -31,6 +31,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *strike;
 @property (weak, nonatomic) IBOutlet UIImageView *spare;
 
+//10farme
+@property (weak, nonatomic) IBOutlet UIImageView *strike2;
+@property (weak, nonatomic) IBOutlet UIImageView *strike3;
+@property (weak, nonatomic) IBOutlet UIImageView *spare2;
 
 
 // Button

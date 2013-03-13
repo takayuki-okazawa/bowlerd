@@ -25,6 +25,9 @@
 @synthesize allowRight;
 @synthesize strike;
 @synthesize spare;
+@synthesize strike2;
+@synthesize strike3;
+@synthesize spare2;
 
 - (void)viewDidLoad
 {
@@ -126,6 +129,8 @@
 }
 
 - (IBAction)load:(id)sender {
+    Common *common = [[Common alloc] init];
+    editGameScoreArray = [[NSMutableArray alloc] initWithArray:[common getGameScore]];
 }
 
 - (IBAction)point_0:(id)sender {
@@ -193,7 +198,7 @@
     [endButton setHidden:YES];
     [allowRight setHidden:NO];
     [frame setImage:[UIImage imageNamed:@"frame.png"]];
-    [scoreSum setFrame:CGRectMake(139, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
+    [scoreSum setFrame:CGRectMake(121, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
     
     if(0 == nowFrame){
         [score1 setText:[editGameScoreArray objectAtIndex:0]];
@@ -246,10 +251,8 @@
         [score3 setText:[editGameScoreArray objectAtIndex:29]];
         [scoreSum setText:[editGameScoreArray objectAtIndex:30]];
         [frame setImage:[UIImage imageNamed:@"frame_last.png"]];
-        [scoreSum setFrame:CGRectMake(170, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
+        [scoreSum setFrame:CGRectMake(150, scoreSum.frame.origin.y, scoreSum.frame.size.width, scoreSum.frame.size.height)];
         [score3 setHidden:NO];
-//        [endButton setHidden:NO];
-//        [allowRight setHidden:YES];
     }
 }
 
@@ -365,8 +368,9 @@
             [editGameScoreArray replaceObjectAtIndex:26 withObject:[NSString stringWithFormat:@"%d", point3]];
         }
         else if(9 == page){
+            int pointSum = point3 + [score3.text intValue];
             [editGameScoreArray replaceObjectAtIndex:27 withObject:[NSString stringWithFormat:@"%d", point]];
-            [editGameScoreArray replaceObjectAtIndex:30 withObject:[NSString stringWithFormat:@"%d", point3]];
+            [editGameScoreArray replaceObjectAtIndex:30 withObject:[NSString stringWithFormat:@"%d", pointSum]];
         }
         
         [self changePoint];
@@ -421,8 +425,9 @@
             [editGameScoreArray replaceObjectAtIndex:26 withObject:[NSString stringWithFormat:@"%d", point3]];
         }
         else if(9 == page){
+            int pointSum = point3 + [score3.text intValue];
             [editGameScoreArray replaceObjectAtIndex:28 withObject:[NSString stringWithFormat:@"%d", point]];
-            [editGameScoreArray replaceObjectAtIndex:30 withObject:[NSString stringWithFormat:@"%d", point]];
+            [editGameScoreArray replaceObjectAtIndex:30 withObject:[NSString stringWithFormat:@"%d", pointSum]];
         }
         
         [self changePoint];
@@ -432,30 +437,100 @@
 
 - (void) changePoint{
     
-    //View Strike & Spere
-    int now_point1 = [score1.text intValue];
-    BOOL strikeFlag = NO;
-    if(10 == now_point1){
-        [strike setHidden:NO];
-        [spare setHidden:YES];
-        [score1 setHidden:YES];
-        [score2 setHidden:YES];
-        strikeFlag = YES;
+    if(9 == page){
+        
+        //Strike
+        int now_point1 = [score1.text intValue];
+        int now_point2 = [score2.text intValue];
+        int now_point3 = [score3.text intValue];
+        
+        BOOL strikeFlag = NO;
+        
+        if(10 == now_point1){
+            [strike setHidden:NO];
+            [score1 setHidden:YES];
+            [spare setHidden:YES];
+            strikeFlag = YES;
+        }
+        else{
+            [strike setHidden:YES];
+            [score1 setHidden:NO];
+        }
+        
+        if(10 == now_point2){
+            [strike2 setHidden:NO];
+            [score2 setHidden:YES];
+            [spare2 setHidden:YES];
+            strikeFlag = YES;
+        }
+        else{
+            [strike2 setHidden:YES];
+            [score2 setHidden:NO];
+        }
+        
+        if(10 == now_point3){
+            [strike3 setHidden:NO];
+            [score3 setHidden:YES];
+            strikeFlag = YES;
+        }
+        else{
+            [strike3 setHidden:YES];
+            [score3 setHidden:NO];
+        }
+        
+        //Spere
+        now_point2 = [score2.text intValue];
+        now_point3 = [score3.text intValue];
+        if(10 == now_point1+now_point2 && !strikeFlag){
+            [spare setHidden:NO];
+            [score2 setHidden:YES];
+        }
+        else if(!strikeFlag){
+            [spare setHidden:YES];
+            [score2 setHidden:NO];
+        }
+        
+        if(10 == now_point2+now_point3 && !strikeFlag){
+            [spare2 setHidden:NO];
+            [score3 setHidden:YES];
+        }
+        else if(!strikeFlag){
+            [spare2 setHidden:YES];
+            [score3 setHidden:NO];
+        }
+
+
     }
     else{
-        [strike setHidden:YES];
-        [score1 setHidden:NO];
+        //Strike
+        int now_point1 = [score1.text intValue];
+        BOOL strikeFlag = NO;
+        
+        if(10 == now_point1){
+            [strike setHidden:NO];
+            [spare setHidden:YES];
+            [score1 setHidden:YES];
+            [score2 setHidden:YES];
+            strikeFlag = YES;
+        }
+        else{
+            [strike setHidden:YES];
+            [score1 setHidden:NO];
+        }
+        
+        //Spere
+        int now_point2 = [score2.text intValue];
+        if(10 == now_point1+now_point2 && !strikeFlag){
+            [spare setHidden:NO];
+            [score2 setHidden:YES];
+        }
+        else if(!strikeFlag){
+            [spare setHidden:YES];
+            [score2 setHidden:NO];
+        }
+        
     }
     
-    int now_point2 = [score2.text intValue];
-    if(10 == now_point1+now_point2 && !strikeFlag){
-        [spare setHidden:NO];
-        [score2 setHidden:YES];
-    }
-    else if(!strikeFlag){
-        [spare setHidden:YES];
-        [score2 setHidden:NO];
-    }
     
     //Sum Points
     int point1 = [[editGameScoreArray objectAtIndex:2] intValue];

@@ -686,7 +686,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VZa-xN-fmo">
-                                <rect key="frame" x="136" y="163" width="46" height="34"/>
+                                <rect key="frame" x="121" y="163" width="79" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -700,11 +700,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="strike.png" id="Uya-bY-BAC">
-                                <rect key="frame" x="114" y="109" width="25" height="25"/>
+                                <rect key="frame" x="114" y="110" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="strike.png" id="Puh-ji-W4g">
+                                <rect key="frame" x="179" y="110" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="spare.png" id="BzJ-LS-CW1">
                                 <rect key="frame" x="178" y="108" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="strike.png" id="H7a-Qj-lgn">
+                                <rect key="frame" x="114" y="167" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="spare.png" id="BGT-DV-Hns">
+                                <rect key="frame" x="118" y="168" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -722,7 +734,10 @@
                         <outlet property="score3" destination="LAX-8a-qcs" id="fHY-wo-obL"/>
                         <outlet property="scoreSum" destination="VZa-xN-fmo" id="eYz-Yk-6ci"/>
                         <outlet property="spare" destination="BzJ-LS-CW1" id="pdo-FB-iWr"/>
+                        <outlet property="spare2" destination="BGT-DV-Hns" id="cdh-wd-e61"/>
                         <outlet property="strike" destination="Uya-bY-BAC" id="KiM-HX-kWu"/>
+                        <outlet property="strike2" destination="Puh-ji-W4g" id="L3D-NQ-kPi"/>
+                        <outlet property="strike3" destination="H7a-Qj-lgn" id="XIS-7a-btC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -860,7 +875,10 @@
                 <relationship kind="outlet" name="score3" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreSum" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="spare" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spare2" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="strike" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="strike2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="strike3" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>
