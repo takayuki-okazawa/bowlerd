@@ -444,13 +444,14 @@
         int now_point2 = [score2.text intValue];
         int now_point3 = [score3.text intValue];
         
-        BOOL strikeFlag = NO;
+        BOOL strikeFlag1 = NO;
+        BOOL strikeFlag2 = NO;
         
         if(10 == now_point1){
             [strike setHidden:NO];
             [score1 setHidden:YES];
             [spare setHidden:YES];
-            strikeFlag = YES;
+            strikeFlag1 = YES;
         }
         else{
             [strike setHidden:YES];
@@ -461,7 +462,7 @@
             [strike2 setHidden:NO];
             [score2 setHidden:YES];
             [spare2 setHidden:YES];
-            strikeFlag = YES;
+            strikeFlag1 = YES;
         }
         else{
             [strike2 setHidden:YES];
@@ -471,7 +472,7 @@
         if(10 == now_point3){
             [strike3 setHidden:NO];
             [score3 setHidden:YES];
-            strikeFlag = YES;
+            strikeFlag2 = YES;
         }
         else{
             [strike3 setHidden:YES];
@@ -481,20 +482,22 @@
         //Spere
         now_point2 = [score2.text intValue];
         now_point3 = [score3.text intValue];
-        if(10 == now_point1+now_point2 && !strikeFlag){
+        BOOL spareFlag = NO;
+        if(10 == now_point1+now_point2 && !strikeFlag1){
             [spare setHidden:NO];
             [score2 setHidden:YES];
+            spareFlag = YES;
         }
-        else if(!strikeFlag){
+        else if(!strikeFlag1){
             [spare setHidden:YES];
             [score2 setHidden:NO];
         }
         
-        if(10 == now_point2+now_point3 && !strikeFlag){
+        if(10 == now_point2+now_point3 && !strikeFlag2 && !spareFlag){
             [spare2 setHidden:NO];
             [score3 setHidden:YES];
         }
-        else if(!strikeFlag){
+        else if(!strikeFlag2){
             [spare2 setHidden:YES];
             [score3 setHidden:NO];
         }

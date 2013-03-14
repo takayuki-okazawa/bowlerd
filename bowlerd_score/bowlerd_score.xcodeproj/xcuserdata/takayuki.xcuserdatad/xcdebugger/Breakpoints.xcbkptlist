@@ -4,28 +4,28 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "bowlerd_score/SecondViewController.m"
-         timestampString = "384845631.221843"
+         timestampString = "384937738.057082"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "448"
-         endingLineNumber = "448"
+         startingLineNumber = "440"
+         endingLineNumber = "440"
          landmarkName = "-changePoint"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "bowlerd_score/SecondViewController.m"
-         timestampString = "384848111.003044"
+         timestampString = "384938268.059335"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "426"
-         endingLineNumber = "426"
+         startingLineNumber = "299"
+         endingLineNumber = "299"
          landmarkName = "-editSelectErea:"
          landmarkType = "5">
       </FileBreakpoint>
