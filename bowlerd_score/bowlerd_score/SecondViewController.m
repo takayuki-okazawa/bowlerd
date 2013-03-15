@@ -131,6 +131,7 @@
 - (IBAction)load:(id)sender {
     Common *common = [[Common alloc] init];
     editGameScoreArray = [[NSMutableArray alloc] initWithArray:[common getGameScore]];
+    [self changeFrame:0];
 }
 
 - (IBAction)point_0:(id)sender {
